@@ -1,0 +1,23 @@
+{
+  "name": "test-statusboard",
+  "version": "1.0.0",
+  "description": "A dashboard for project status",
+  "main": "config.js",
+  "type": "commonjs",
+  "keywords": [
+    "statusboard",
+    "projects"
+  ],
+  "scripts": {
+    "build": "statusboard build -C ./config.js",
+    "buildsite": "npm run clean && statusboard site -C ./config.js",
+    "buildindex": "statusboard index -C ./config.js",
+    "clean": "rm -rf build/css build/js"
+  },
+  "author": "",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@pkgjs/statusboard": "^0.0.14"
+  }
+}
